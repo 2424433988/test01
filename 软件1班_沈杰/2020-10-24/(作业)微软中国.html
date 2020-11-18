@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../plugins/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../plugins/font-awesome-4.7.0/css/font-awesome.css">
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边 -->
+    <!-- 先引入jquery.js文件 -->
+    <script src="../plugins/jQuery/jquery.min.js">
+
+    </script>
+    <script src="../plugins/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.js">
+    </script>
+    <style>
+        ul{
+            list-style-type:none;
+            padding: 0;
+        }
+        li{
+            display: inline-block;
+            list-style-type:none;
+            padding: 10px;
+
+        }
+        #myCarousel #pictures{
+			height: 430px;
+            width: 1140px;
+		}
+        #myCarousel .carousel-inner>.item>img {
+			display: block;
+			width: 100%;
+			height: 430px;
+		}
+        .czz{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a{
+            text-decoration: none  ;
+        }
+    </style>
+</head>
+<body>
+<div>
+        <!-- 导航begin -->
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid" style="background-color: gainsboro;"> 
+                <div class="navbar-header" >
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#example-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" ><img src="../img/首页.png" alt="" style="margin-top: -12px;width: 200px;"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li ><a href="#">Microsoft 365</a></a></li>
+                        <li ><a href="#">Office</a></li>
+                        <li ><a href="#">Windows</a></a></li>
+                        <li ><a href="#">Surface</a></a></li>
+                        <li ><a href="#">Xbox</a></a></li>
+                        <li ><a href="#">支持</a></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+                                所有 Microsoft <b class="caret"></b>
+                            </a>
+                            <table class="dropdown-menu" style="width: 900px;font-size:20px; ">
+                                <tr>
+                                    <td><h5>软件</h5></td>
+                                    <td><h5>pc和设备</h5></td>
+                                    <td><h5>娱乐</h5></td>
+                                    <td><h5>企业版</h5></td>
+                                    <td><h5>开发人员与IT</h5></td>
+                                    <td><h5>其他</h5></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" style="color: black;">Windows 应用</a></td>
+                                    <td><a href="#" style="color: black;">购买 Xbox</a></td>
+                                    <td><a href="#" style="color: black;">Xbox 与游戏</a></td>
+                                    <td><a href="#" style="color: black;">Microsoft Azure</a></td>
+                                    <td><a href="#" style="color: black;">.NET</a></td>
+                                    <td><a href="#" style="color: black;">免费下载与安全性</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" style="color: black;">OneDrive</a></td>
+                                    <td><a href="#" style="color: black;">pc与平板电脑</a></td>
+                                    <td><a href="#" style="color: black;">pc游戏</a></td>
+                                    <td><a href="#" style="color: black;">Microsoft 365</a></td>
+                                    <td><a href="#" style="color: black;">Visual Studio</a></td>
+                                    <td><a href="#" style="color: black;">教育</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" style="color: black;">Outlook</a></td>
+                                    <td><a href="#" style="color: black;">配件</a></td>
+                                    <td></td>
+                                    <td><a href="#" style="color: black;">Microsoft Industry</a></td>
+                                    <td><a href="#" style="color: black;">Windows Server</a></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" style="color: black;">Skype</a></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#" style="color: black;">数据平台</a></td>
+                                    <td><a href="#" style="color: black;">开发Windows应用</a></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" style="color: black;">OneNote</a></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#" style="color: black;">Power Platform</a></td>
+                                    <td><a href="#" style="color: black;">文档</a></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" style="color: black;">Mircosoft Teams</a></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><a href="#" style="color: black;">购买商业版</a></td>
+                                    <td><a href="#" style="color: black;">Power Apps</a></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">
+                                        <a href="#" class="dropdown-menu">查看站点地图<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- <a href="#" class="dropdown-menu">查看站点地图<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> -->
+                           
+                        </li>
+                        <li> <a href="#">搜索  <span class="glyphicon glyphicon-search" aria-hidden="true"></span></a></li>
+                        <li><a href="#">购物车  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+                        <li>
+                            <img src="../img/01.jpg" class="czz">
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- 导航end -->
+    
+    <!--轮播begin - swiper-->
+    <div  class=" container container-fluid " style="margin-top: -20px;" >
+        <div class="row">
+            <div id="myCarousel" class="carousel slide" >
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
+                </ol>   
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <!-- img图片应该是切出来的 -->
+                        <a href="#"style="text-decoration: none;">
+                            <img src="../img/轮播1.jpeg"alt="First slide">
+                            <div class="carousel-caption" style="left: 200px; top: 190px;text-align: left;"> 
+                            <h3 style="color: black; ">纤薄轻巧 自在畅连</h3>
+                            <p style="color: black;">Surface Pro X 造型时尚，打在迅捷如飞的LIE，让您快人一步</p>
+                            <button style="background-color: black;height: 50px;width: 100px;">
+                                <a href="#" style="text-decoration: none; color: white;">立即预购<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                            </button>
+                            </div></a>
+                    </div>
+                    <div class="item">
+                        <a href="#" style="text-decoration: none;">
+                            <img src="../img/轮播2.jpeg " alt="Second slide">
+                            <div class="carousel-caption" style="left: 200px; top: 190px;text-align: left;"> 
+                                <h3 style="color: black;">全新Surface Laptop Go</h3>
+                                <p style="color: black;">选择轻盈的Surface笔记本电脑，充分利用每一天</p>
+                                <button style="background-color: black;height: 50px;width: 100px;">
+                                    <a href="#"style="text-decoration: none; color: white;">立即预购<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                                </button>
+                            </div></a>
+                    </div>
+                    <!-- <div class="item">
+                        <img src="../img/03.png" alt="Third slide">
+                    </div> -->
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left" href="#myCarousel" 
+                   data-slide="prev"> <span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="carousel-control right" href="#myCarousel" 
+                   data-slide="next"><span _ngcontent-c3="" aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            $('#myCarousel').carousel({
+                interval: 4000
+            })
+        })
+    </script>
+    <!--轮播end-->
+    
+    <div  class=" container container-fluid " style="margin-top: 9px; text-align: center;" >
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <a href="#"style=>
+                    <img src="../img/图标1.png" alt="First">
+                    <div class="caption">
+                        <p style="color: black;">选择你的Mircosoft 365</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#">
+                    <img src="../img/图标2.webp" alt="Second">
+                    <div class="caption">
+                        <p style="color: black;">购买Surface设备</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#">
+                    <img src="../img/图标3.png" alt="Third">
+                    <div class="caption">
+                        <p style="color: black;">购买Xbox游戏和主机</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#">
+                    <img src="../img/图标4.png" alt="Forth">
+                    <div class="caption">
+                        <p style="color: black;">购买windows 10</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="#">
+                    <img src="../img/图标5.png" alt="Fifth">
+                    <div class="caption">
+                        <p style="color: black;">购买商用版</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <div  class=" container container-fluid " style="margin-top: 9px; text-align: center;" >
+        <div class="row">
+            <div class="col-md-3" style="text-align: left;">
+                <div> 
+                    <a href="#" style="text-decoration: none;">
+                    <img src="../img/链接图1.webp" alt="" style="width: 250px;">
+                    <div class="caption">
+                        <h3 style="color: black;">Surface Pro 7</h3>
+                        <p style="color: black;">让 Pro 为你更添助力。有史以来最强，Surface Pro 7 具有笔记本电脑级的 Intel® Core™ 处理器。</p>
+                        <a href="#" >立即购买<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                    </div>
+                </a>
+            </div>
+            </div>
+            <div class="col-md-3" style="text-align: left;">
+                <div>
+                    <a href="#" style="text-decoration: none;">
+                    <img src="../img/链接图2.webp" alt="" style="width: 250px;">
+                    <div class="caption">
+                        <h3 style="color: black;">Microsoft 365</h3>
+                        <p style="color: black;">只需一次便捷的订阅，便可使用高级 Office 应用、额外的云存储、高级安全性等功能。</p>
+                        <a href="#">最多可允许6名用户安装<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        <br>
+                        <a href="#">仅供1名用户安装<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                    </div>
+                </a>
+            </div>
+                
+            </div>
+            <div class="col-md-3" style="text-align: left;">
+                <div>
+                    <a href="#" style="text-decoration: none;">
+                        <img src="../img/链接图3.webp" alt="" style="width: 250px;">
+                        <div class="caption">
+                            <h3 style="color: black;">Microsoft Teams</h3>
+                            <p style="color: black;">聊天、开会、通话和协作。</p>
+                            <a href="#">了解更多<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3" style="text-align: left;">
+                <div>
+                    <a href="#" style="text-decoration: none;">
+                    <img src="../img/链接图4.webp" alt="" style="width: 250px;">
+                    <div class="caption" >
+                        <h3 style="color: black;">Xbox One S</h3>
+                        <p style="color: black;">物超所值的游戏和娱乐设备，配备 4K 蓝光和视频流。</p>
+                        <a href="#">立即购买<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pictures" class=" container container-fluid " style="text-align: center;" >
+            <div>
+                <a href="#" style="text-decoration: none;">
+                <img src="../img/浏览器1.jpeg " alt="Second slide" style="width: 1140px;">
+                <div style="position:relative; left:0px; top:-400px"> 
+                    <h2 style="color: black;">新版Microsoft Fdge 简介</h2>
+                    <p style="color: black;">浏览过程中，可体验出色性能，隐私性更强、效率和价值更高</p>
+                    <button style="background-color: black;height: 50px;width: 100px;">
+                        <a href="#"style="text-decoration: none; color: white;">立即下载<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                    </button>
+                </div>
+                </a>
+        </div>
+    </div>
+    <div  class=" container container-fluid " style="margin-top: 9px; text-align: center;" >
+        <div class="row">
+            <div style="text-align: left;margin-top: -130px;">
+                <h3>适用于工作地点</h3>
+            </div>
+            <div>
+                <div class="col-md-3" style="text-align: left;">
+                    <div>
+                        <a href="#" style="text-decoration: none;">
+                        <img src="../img/工作地点1.webp" alt="" style="width: 250px;">
+                        <div class="caption" >
+                            <h3 style="color: black;">新型业务</h3>
+                            <p style="color: black;">全新 Surface Laptop Go 商用版 性能强劲，效率出众，在现代工作场所中让人印象深刻。</p>
+                            <a href="#">立即预购<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                    </a>
+                    </div>
+                </div><div class="col-md-3" style="text-align: left;">
+                    <div>
+                        <a href="#" style="text-decoration: none;">
+                        <img src="../img/工作地点2.webp" alt="" style="width: 250px;">
+                        <div class="caption" >
+                            <h3 style="color: black;">Microsoft 365 商业版</h3>
+                            <p style="color: black;">借助功能强大的应用在工作效率、连接和安全性方面保持领先。</p>
+                            <a href="#">立即购买<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                    </a>
+                    </div>
+                </div><div class="col-md-3" style="text-align: left;">
+                    <div>
+                        <a href="#" style="text-decoration: none;">
+                        <img src="../img/工作地点3.webp" alt="" style="width: 250px;">
+                        <div class="caption" >
+                            <h3 style="color: black;">工作弹性</h3>
+                            <p style="color: black;">借助 Microsoft Teams 让团队随时随地保持联系。</p>
+                            <a href="#">了解更多<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                    </a>
+                    </div>
+                </div><div class="col-md-3" style="text-align: left;">
+                    <div>
+                        <a href="#" style="text-decoration: none;">
+                        <img src="../img/工作地点4.webp" alt="" style="width: 250px;">
+                        <div class="caption" >
+                            <h3 style="color: black;">创建在线教室</h3>
+                            <p style="color: black;">获取有关如何使用 Microsoft Teams 的专家提示（教育工作者和学生可免费获取）以创建任务、开展虚拟协作等。</p>
+                            <a href="#">了解更多<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div  class=" container container-fluid " style="margin-top: 9px; text-align: center;" >
+        <div class="row">
+            <div style="text-align: left;margin-top: -130px;">
+                <p style="color: gainsboro;">关注Microsoft</p>
+            </div>
+        </div>
+    </div>
+    <!-- <div  class=" container container-fluid " style="margin-top: 30px; text-align: left; margin-left: 180px;" >
+        <div class="row">
+           
+        </div>
+    </div> -->
+    
+            <div class="jumbotron">
+                <div class="container">
+                    <table style="width: 1140px; text-align: left;"
+                     <tr>
+                         <td><h4 style="color:gray;">新增内容</h4></td>
+                         <td><h4 style="color:gray;">Microsoft Store</h4></td>
+                         <td><h4 style="color:gray;">教育</h4></td>
+                         <td><h4 style="color:gray;">企业</h4></td>
+                         <td><h4 style="color:gray;">开发人员</h4></td>
+                         <td><h4 style="color:gray;">公司</h4></td>
+                     </tr>
+                     </tr>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">Microsoft 365</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">账户个人资料</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">Microsoft 教育领域</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">Azure</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">Microsoft Visual Studio</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">招贤纳士</a></td>
+                     <tr>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">Surface Pro 6</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">下载中心</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">适合学生的Office</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">AppSource</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">Windows 开发人员中心</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">关于Microsoft</a></td>
+                     </tr>
+                     <tr>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">Surface Laptop 6</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">订单跟踪</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">适合学校的Office 365</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">汽车</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">开发人员中心</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">公司新闻</a></td>
+                     </tr>
+                     <tr>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">Surface Go</a></td>
+                         <td></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">Microsoft Azure 教育领域</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">政府机构</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">Microsoft 开发人员计划</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">Microsoft隐私</a></td>
+                     </tr>
+                     <tr>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">Windows 10 应用程序</a></td>
+                         <td></td>
+                         <td></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">医疗保健</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">第9频道</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">投资人</a></td>
+                     </tr>
+                     <tr>
+                         <td></td>
+                         <td></td>
+                         <td></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">制造业</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">Office 开发人员中心</a></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">安全性</a></td>
+                     </tr>
+                     <tr>
+                         <td></td>
+                         <td></td>
+                         <td></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">金融服务</a></td>
+                         <td></td>
+                         <td></td>
+                     </tr>
+                     <tr>
+                         <td></td>
+                         <td></td>
+                         <td></td>
+                         <td><a href="#" style="color: rgb(75, 70, 70);">零售业</a></td>
+                         <td></td>
+                         <td></td>
+                        </tr>
+                    </table><br>
+                        <ul>
+                            <li style="float:left;">
+                                <a href="#" style="color:black;"><p></p><span class="glyphicon glyphicon-globe"></span>中文(中国)</p></a>
+                            </li>
+                            <li style="float: right;">
+                                <a href="#" style="color:black;">与Mircosoft联系</a>                        
+                            </li>
+                            <li style="float: right;">
+                                <a href="#" style="color: black;">隐私</a>
+                            </li>
+                            <li style="float: right;">
+                                <a href="#" style="color: black;">使用条款</a>
+                            </li>
+                            <li style="float: right;">
+                                <a href="#" style="color: black;">商标</a>
+                            </li>
+                            <li style="float: right;">
+                                <a href="#" style="color:black;">关于我们的广告</a>
+                            </li>
+                            <li style="float: right;">
+                                <a href="#" style="color:black;">京ICP备09042378号-6</a>
+                            </li>
+                            <li style="float: right;">
+                                <a href="#" style="color:black;">京公网安备11010802023178</a>
+                            </li>
+                            <li style="float: right;">
+                                <a href="#" style="color:black;">© Microsoft 2020</a>
+                            </li>
+                        </ul>  
+                </div>
+            </div>
+</div>
+</body>
+</html>
